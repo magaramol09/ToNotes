@@ -14,8 +14,8 @@ export default function App() {
             headerShown: false,
           }}
         >
-          <Stack.Screen name="Home" component={OnboardingScreen} />
-          <Stack.Screen name="LogIn" component={LogIn} />
+          <Stack.Screen name="onboarding" component={OnboardingScreen} />
+          <Stack.Screen name="login" component={LogIn} />
         </Stack.Navigator>
       </NavigationContainer>
     </>

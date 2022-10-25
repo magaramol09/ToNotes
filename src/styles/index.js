@@ -1,1 +1,1 @@
-export * from 'styles'
+export { styles } from "./loginStyle.jsx";

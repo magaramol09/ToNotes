@@ -7,8 +7,8 @@ export function OnboardingScreen({ navigation }) {
   return (
     <>
       <Onboarding
-        onSkip={() => navigation.navigate("LogIn")}
-        onDone={() => navigation.navigate("LogIn")}
+        onSkip={() => navigation.navigate("login")}
+        onDone={() => navigation.navigate("login")}
         pages={[
           {
             backgroundColor: "#6f42c1",
