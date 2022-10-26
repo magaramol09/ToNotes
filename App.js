@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { OnboardingScreen, LogIn } from "./src/screens";
+import { OnboardingScreen, LogIn, Home } from "./src/screens";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -16,6 +16,7 @@ export default function App() {
         >
           <Stack.Screen name="onboarding" component={OnboardingScreen} />
           <Stack.Screen name="login" component={LogIn} />
+          <Stack.Screen name="home" component={Home} />
         </Stack.Navigator>
       </NavigationContainer>
     </>

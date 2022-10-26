@@ -6,6 +6,7 @@ import {
   TextInput,
   TouchableOpacity,
   Image,
+  StatusBar,
 } from "react-native";
 
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
@@ -18,24 +19,34 @@ import InputField from "../components/InputField";
 export function LogIn({ navigation }) {
   return (
     <>
-      <SafeAreaView style={{ flex: 1, justifyContent: "center" }}>
+      <View
+        style={{
+          flex: 1,
+          justifyContent: "center",
+          backgroundColor: "#6f42c1",
+        }}
+      >
         <View style={{ paddingHorizontal: 25 }}>
           <View style={{ alignItems: "center" }}>
             <Image
               source={require("../../assets/signIn.png")}
-              style={{ height: 300, width: 300 }}
+              style={{
+                height: 300,
+                width: 300,
+              }}
             />
           </View>
 
           <Text
             style={{
-              fontSize: 28,
+              fontSize: 23,
               fontWeight: "500",
-              color: "#333",
+              color: "#f0f8ff",
               marginBottom: 30,
+              letterSpacing: 2.5,
             }}
           >
-            Login
+            Hello There!
           </Text>
 
           <InputField
@@ -66,36 +77,42 @@ export function LogIn({ navigation }) {
             fieldButtonFunction={() => {}}
           />
 
-          <CustomButton label={"Login"} onPress={() => {}} />
+          <CustomButton
+            label={"singup / signup"}
+            onPress={() => {
+              navigation.navigate("home");
+            }}
+          />
 
           <Text
-            style={{ textAlign: "center", color: "#666", marginBottom: 30 }}
+            style={{ textAlign: "center", color: "#f0f8ff", marginBottom: 30 }}
           >
-            Or, login with ...
+            OR
           </Text>
 
           <TouchableOpacity
             onPress={() => {}}
             style={{
               borderColor: "#ddd",
+              backgroundColor: "#f0f8ff",
               borderWidth: 2,
               borderRadius: 10,
               paddingHorizontal: 30,
-              paddingVertical: 10,
+              paddingVertical: 8,
             }}
           >
             <View style={{ flexDirection: "row", alignItems: "center" }}>
               <Image
-                style={{ width: 48, height: 48 }}
+                style={{ width: 44, height: 40 }}
                 source={require("../../assets/google.png")}
               ></Image>
               <Text style={{ fontSize: 16, fontWeight: "500", marginLeft: 12 }}>
-                Sign in with Google
+                Continue with Google
               </Text>
             </View>
           </TouchableOpacity>
         </View>
-      </SafeAreaView>
+      </View>
     </>
   );
 }
