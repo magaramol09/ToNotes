@@ -44,6 +44,7 @@ export function Home() {
               height: 250,
               width: 250,
             }}
+            imageStyle={{ opacity: 0.7 }}
           />
           <Text> What in your Mind share here... </Text>
         </View>
