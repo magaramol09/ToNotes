@@ -16,7 +16,9 @@ export function Home() {
   return (
     <>
       {/* statusBar componentes */}
+
       <SafeAreaView style={style.Container}>
+        <StatusBar barStyle="dark-content" />
         {/* uppper Itmes */}
         {/* middle svgs  */}
 
