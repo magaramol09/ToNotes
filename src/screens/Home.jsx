@@ -18,25 +18,6 @@ export function Home() {
       {/* statusBar componentes */}
 
       <SafeAreaView style={style.Container}>
-        <StatusBar barStyle="dark-content" />
-        {/* uppper Itmes */}
-        {/* middle svgs  */}
-
-        <View style={style.UpperHearders}>
-          <SimpleLineIcons
-            name="menu"
-            size={30}
-            color="black"
-            style={{ marginLeft: 20 }}
-          />
-          <Ionicons
-            name="ellipsis-vertical-outline"
-            size={30}
-            color="black"
-            style={{ marginRight: 8 }}
-          />
-        </View>
-
         <View style={style.MiddelListItems}>
           <ImageBackground
             source={require("../../assets/home.png")}

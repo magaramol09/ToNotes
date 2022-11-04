@@ -80,7 +80,7 @@ export function LogIn({ navigation }) {
           <CustomButton
             label={"singup / signup"}
             onPress={() => {
-              navigation.navigate("home");
+              navigation.navigate("appstack");
             }}
           />
 
